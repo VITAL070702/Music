@@ -7,7 +7,7 @@ class Music {
       disquera,
       imageUrl,
       duration,
-      informacion,
+      informacion
     ) {
       this.id = id;
       this.categoryIds = categoryIds;
@@ -16,7 +16,7 @@ class Music {
       this.duration = duration;
       this.disquera = disquera;
       this.asociados = asociados;
-      this.informacion = informacion;
+      this.informacion = informacion
       
     }
   }

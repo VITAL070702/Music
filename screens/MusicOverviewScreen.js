@@ -20,7 +20,7 @@ function MusicOverviewScreen({ route, navigation }){
         })
     }, [catId, navigation])
 
-    function renderMealItem(itemData) {
+    function renderMusicItem(itemData) {
     
         return(
 

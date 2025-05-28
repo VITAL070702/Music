@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native'
 import CategoriesScreen from "./screens/CategoriesScreen";
 
  import{NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack'
-import MusicOverviewScreen from './screens/MusicOverviewScreen';
+ import {createStackNavigator} from '@react-navigation/stack'
+ import MusicOverviewScreen from './screens/MusicOverviewScreen';
  import MusicDetailScreen from './screens/MusicDetailScreen';
  const Stack = createStackNavigator();
 

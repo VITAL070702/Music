@@ -4,6 +4,7 @@ class Category {
       this.id = id;
       this.title = title;
       this.color = color;
+      this.duration
     }
   }
   

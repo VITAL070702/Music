@@ -3,10 +3,10 @@ class Music {
       id,
       categoryIds,
       title,
-      asociados,
-      disquera,
       imageUrl,
       duration,
+      disquera,
+      asociados,
       informacion
     ) {
       this.id = id;

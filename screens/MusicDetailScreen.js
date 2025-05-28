@@ -5,9 +5,12 @@ import MusicDetails from "../components/MusicDetails"
 
 function MusicDetailScree({route, navigation}) {
     const musicId = route.params.musicId
+    console.log('music id',musicId)
+    
 
-    const selectedMusic = MUSIC.find((music) => music.Id === musicId)
-
+    const selectedMusic = MUSIC.find((music) => music.id === musicId)
+    console.log('selected music', selectedMusic)
+    const asociados = selectedMusic.asociados.map(asociado => <Text style={styles.textContent}key={asociado}>{asociado}</Text>)
     return(
         <ScrollView>
             <Image style={styles.image} source={{ uri: selectedMusic.imageUrl }} />
@@ -19,9 +22,9 @@ function MusicDetailScree({route, navigation}) {
             />
             <View>
                 <Text style={styles.subtitle}>Informacion</Text>
-                {selectedMusic.informacion.map(informacion => <Text style={styles.textContent} key={informacion}>{informacion}</Text>)}
+                <Text>{selectedMusic.informacion}</Text>
                 <Text style={styles.subtitle}>asociados</Text>
-                {selectedMusic.asociados.map(asociados => <Text style={styles.textContent} key={asociados}>{asociados}</Text>)}
+                <Text>{asociados}</Text>
             </View>
         </ScrollView>
     )
@@ -53,6 +56,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1
     },
     textContent: {
+
         fontSize: 14,
         margin: 4,
         marginVertical: 3,

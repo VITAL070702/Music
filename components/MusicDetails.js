@@ -1,10 +1,10 @@
 import {View,Text,StyleSheet} from 'react-native'
-function MusicDetails({duration, disquera, asociados}){
+function MusicDetails({duration='asdf', disquera ='asdf', asociados='asdf'}){
     return(
         <View style={styles.details}>
             <Text style={styles.detailItem}>{duration}</Text>
             <Text style={styles.detailItem}>{disquera.toUpperCase()}</Text>
-            <Text style={styles.detailItem}>{asociados.toUpperCase()}</Text>
+            <Text style={styles.detailItem}>{console.log('asociados',asociados)}</Text>
         </View>
     )
 }

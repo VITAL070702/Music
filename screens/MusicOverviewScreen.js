@@ -11,6 +11,7 @@ function MusicOverviewScreen({ route, navigation }){
     const displayedMusic = MUSIC.filter((musicItem) => {
         return musicItem.categoryIds.indexOf(catId) >= 0
     })
+    console.log('diaplayedmusic',displayedMusic)
 
     useLayoutEffect(() => {
         const categoryTitle = CATEGORIES.find((category) => category.id === catId).title
@@ -28,7 +29,7 @@ function MusicOverviewScreen({ route, navigation }){
                 id={itemData.item.id} 
                 title={itemData.item.title}
                 imageUrl={itemData.item.imageUrl}
-                asosiados={itemData.item.asociados}
+                asociados={itemData.item.asociados}
                 disquera={itemData.item.disquera}
                 duration={itemData.item.duration}
             />

@@ -10,7 +10,7 @@ function MusicDetailScree({route, navigation}) {
 
     const selectedMusic = MUSIC.find((music) => music.id === musicId)
     console.log('selected music', selectedMusic)
-    const asociados = selectedMusic.asociados.map(asociado => <Text style={styles.textContent}key={asociado}>{asociado}</Text>)
+    const asociados = selectedMusic.asociados.map(asociado => <Text key={asociado}>{asociado}</Text>)
     return(
         <ScrollView>
             <Image style={styles.image} source={{ uri: selectedMusic.imageUrl }} />
@@ -48,12 +48,12 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         margin: 4,
-        padding: 6,
+        padding: 8,
         marginHorizontal: 24,
-        marginVertical: 4,
+        marginVertical: 8,
         textAlign: 'center',
-        borderBottomColor: 'black',
-        borderBottomWidth: 1
+        borderBottomColor: 'white',
+        borderBottomWidth: 3
     },
     textContent: {
 

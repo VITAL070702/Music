@@ -16,7 +16,7 @@ function MusicItem({ id, title, imageUrl, duration, disquera, asociados }){
     return(
         <View style={styles.mailItem}>
             <Pressable 
-                android_ripple={{ color: '#ccc'}}
+                android_ripple={{ color: 'grey'}}
                 style={({ pressed }) => (pressed ? styles.buttonPressed : null) } 
                 onPress={selectMusicItemHandler}
             >
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         margin: 16,
         borderRadius: 8,
         overflow: Platform.OS === 'android' ? 'hidden' : 'visible',
-        backgroundColor:'white',
+        backgroundColor:'black',
         elevation: 4,
         shadowColor: 'black',
         shadowOpacity: 0.25,

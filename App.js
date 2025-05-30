@@ -13,13 +13,13 @@ export default function App() {
   
   return (
    <>
-   <StatusBar style ='dark'/>
+   <StatusBar style ='black'/>
    <NavigationContainer>
     <Stack.Navigator
     screenOptins={{
-      headerStyles:{ backgroundColor:'#987070'},
-      headerTintColor:'white',
-      contentStyle:{backgroundColor:'#F1E5D1'}
+      headerStyles:{ backgroundColor:'black'},
+      headerTintColor:'black',
+      contentStyle:{backgroundColor:'black'}
     }}
     >
       <Stack.Screen
@@ -33,7 +33,7 @@ export default function App() {
       optins={{
         title:'All categories',
         headerTintColor:'white',
-        contentStyle:{ backgroundColor:'#C39898'}
+        contentStyle:{ backgroundColor:'black'}
       }}
       />
       <Stack.Screen name="MusicDetail"

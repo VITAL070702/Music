@@ -2,7 +2,8 @@ import {View,Pressable, Text, StyleSheet, Platform} from "react-native";
 function CategoryGridTile({title, color,onPress}){
     return(
         <View style={[styles.gridItem,{backgroundColor:color}]}>
-            <Pressable android_ripple={{color:'#ccc'}}
+            <Pressable android_ripple={{color:'grey'}}
+            //cambia al momento de presionar los botones
          style={({pressed}) =>[styles.button, pressed ? styles.buttonPressed:null,]}
          onPress= {onPress}>
             <View style={styles.innerContainer}>
@@ -22,8 +23,8 @@ const styles = StyleSheet.create({
         height:150,
         bordeRadius:8,
         elevation:4,
-        backgroundColor:'white',
-        shadowColor:'black',
+        backgroundColor:'black',
+        shadowColor:'white',
         shadowOpacity:0.25,
         shadowOffset:{width:0, height:2},
         shadowRadius:8,

@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'center',
-        padding:8
+        padding:5
     },
     detailItem:{
-        marginHorizontal:4,
-        fontSize:12
+        marginHorizontal:20,
+        fontSize:14
     }
 })
 
